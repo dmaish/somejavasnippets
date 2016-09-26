@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class Fibonacci {
+	public static void main(String[]args){
+		int n1=1;
+		int n2=2;
+		int n3=n1+n2;
+		int count=10;
+		ArrayList fiboList = new ArrayList();
+		
+		//input first two characters of the sequence into the arraylist which are usually 1 and 2
+		fiboList.add(n1);
+		fiboList.add(n2);
+		
+		for(int i=0;i<=count;i++){
+		  n3=n1+n2;
+		  fiboList.add(n3);
+		  
+		 //swap last two values for the next iteration
+		  n1=n2;
+		  n2=n3;
+		}
+		
+		//converts the said ArrayList into an Array
+		System.out.println(fiboList.toArray());
+	}
+
+}
