@@ -1,0 +1,15 @@
+package inheritance;
+//main class
+public class Classinheritance {
+	int salary=40000;
+
+}
+
+//this is the sub-class
+ class SmallClass extends Classinheritance{
+	 
+	public static void main(String[]args){
+	SmallClass theObject=new SmallClass();
+	System.out.println("salary in the main class is:"+""+ theObject.salary);
+}
+}
